@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Product Survey Form</title>
+</head>
+<body>
+    <div id="background-img">
+    <div id="main">
+            <center>
+            <h1 id="title">Product Survey Form</h1>
+            <p id="description">Thank you for giving valuable time to improve our product.</p>
+            </center><br>
+        <div id="form-box">
+            <form id="survey-form">
+                <label for="name" id="name-label">Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name...." required><br><br>
+                
+                <label for="email" id="email-label">Email:</label><br>
+                <input type="email" id="email" placeholder="Enter your email...." required><br><br>
+
+                <label for="Rating" id="number-label">Rating our Product:</label><br>
+                <input type="number" id="number" placeholder="Enter your rating from 1 to 5...." max="5" min="1" required><br><br>
+                
+                <label for="first-reaction" id="dropdown-label">How would you rate first reaction for our Product?</label><br>
+                <select name="first-reaction" id="dropdown">
+                    <option value="Rate your first reaction....">Rate your first reaction....</option>
+                    <option value="Very-positiv">Very Positive</option>
+                    <option value="Somewhat-positive">Somewhat Positive</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Somewhat-negative">Somewhat Negative</option>  
+                    <option value="Very-nagative">Very Negative</option>                  
+                </select><br><br>
+
+                <label for="rating" id="rating">How would you rate the value for money of the Product?</label><br>
+                
+                    <input type="radio" id="radio" name="rate-money" value="Male">
+                    <label for="Excellent" name="rate-money">Excellent</label><br>
+
+                    <input type="radio" id="radio" name="rate-money" value="Female">
+                    <label for="Above-Average" name="rate-money">Above Average</label><br>
+
+                    <input type="radio" id="radio" name="rate-money" value="Female">
+                    <label for="Average" name="rate-money">Average</label><br>
+                    
+                    <input type="radio" id="radio" name="rate-money" value="Female">
+                    <label for="Below-Average" name="rate-money">Below Average</label><br>
+
+                    <input type="radio" id="radio" name="rate-money" value="Transgender">
+                    <label for="Poor" name="rate-money">Poor</label><br><br>
+                
+                <label for="innovative" id="checkbox">How innovative is the Product?</label><br>
+                
+                    <input type="checkbox" id="checkbox" name="innovative" value="Extremely">
+                    <label for="Extremely">Extremely Innovative</label><br>
+
+                    <input type="checkbox" id="checkbox" name="innovative" value="Somewhat">
+                    <label for="Somewhat">Somewhat Innovative</label><br>
+
+                    <input type="checkbox" id="checkbox" name="innovative" value="Not at all">
+                    <label for="Not at all">Not at all Innovative</label><br><br>
+                
+                <label for="comments">How would we can improve this Product?</label><br>
+                <textarea id="comments" name="comments" placeholder="Write to us here......."></textarea><br><br>
+                
+                <input type="submit" id="submit" value="submit">
+                <input type="reset" id="reset">
+            </form>
+        </div>
+        
+    </div>
+    </div>
+</body>
+</html>
